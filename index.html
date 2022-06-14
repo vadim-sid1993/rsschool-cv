@@ -2,20 +2,128 @@
 <html lang="en">
 
 <head>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="header">
-        <div class="logo">
-            <div class="logo_1">zoo</div>
-            <div class="logo_2">online</div>
+    <header>
+        <div class="photo"><img src="./images/1.jpg" alt="photo"></div>
+        <div class="name">
+            <h1>Vadim <br> Sidorevich</h1>
         </div>
-        <div class="one_light">
-            <div class="elipse"></div>
-        </div>
-
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#about_me">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#code">Code</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about_me" class="section about_me">
+            <h2>About me</h2>
+            <p>Hello, my name is Vadim. I work at a motor plant as a design engineer and I'm currently attended the RSS
+                front-end course. Also in the near future, I want to start learning English. I started to learn
+                front-end at the end of
+                February using videos on YouTube. I watched videos of various bloggers about web development, marathons
+                on site layout, training videos. In addition, haven't learned about the course from the RSS I mastered
+                all the information recommended for starting before starting the course. I was very interested in it. I
+                like to get new knowledge and work it out in practice. If the topic is very interesting I can work on it
+                for hours. In this course, I want to get a lot of information, complete various difficult tasks, gate
+                the experience, and create a portfolio in the future, try to work in a team. I tried to devote as much
+                free time as possible to train and I hope that this will help me in acquiring the skills necessary for a
+                front-end developer. My nearest plans in this area are learning HTML, CSS, Node.js. Then I want to work
+                as a front-end developer. I really like codewars tasks, the rest of the tasks are also interesting for
+                me. Creating the first web-page in the animal shelter task seemed difficult at first, but after that,
+                the rest of the tasks are easier. My favorite task is the Virtual keyboard. I had spent a lot of time
+                for figure it out.
+            </p>
+        </section>
+        <section id="skills" class="section skills">
+            <h2>Skills</h2>
+            <ul>
+                <li> <img src="./images/html.png" alt="pic">
+                    <p>HTML</p>
+                </li>
+                <li> <img src="./images/css.png" alt="pic">
+                    <p>CSS</p>
+                </li>
+                <li> <img src="./images/javascript.jpg" alt="pic">
+                    <p>JS</p>
+                </li>
+                <li> <img src="./images/git.png" alt="pic">
+                    <p>Git</p>
+                </li>
+                <li> <img src="./images/figma.png" alt="pic">
+                    <p>Figma</p>
+                </li>
+            </ul>
+        </section>
+        <section id="code" class="section code">
+            <h2>Code</h2>
+            <pre>
+                document.onkeydown = function(event) {
+                    document.querySelector('.container .kb_key[data = "'+event.code+'"]').classList.add('active');
+                };
+                document.onkeyup = function(event) {
+                    document.querySelector('.container .kb_key[data = "'+event.code+'"]').classList.remove('active');
+                };
+                
+                document.querySelectorAll('.container .kb_key').forEach(function(element) {
+                    element.onclick = function (element){
+                        document.querySelectorAll('.container .kb_key').forEach(function(element) {
+                            element.classList.remove('active');
+                        });
+                        this.classList.add('active');
+                       setTimeout( () => {
+                           this.classList.remove('active')
+                       }, 100) 
+                    }
+                });
+            </pre>
+        </section>
+        <section id="education" class="section education">
+            <h2>Education</h2>
+            <ul>
+                <li><img src="./images/BNTU.png" alt="pic">
+                    <p>Belarusian National Technical University (2011-2016) </p>
+                </li>
+                <li><img src="./images/rss.jpg" alt="pic">
+                    <p>The Rolling Scopes School (2022-u.n.)</p>
+                </li>
+            </ul>
+        </section>
+        <section id="contacts" class="section contacts">
+            <h2>Contacts</h2>
+            <ul>
+                <li>
+                    <p>Phone: +375 (33) 353-76-21</p>
+                </li>
+                <li>
+                    <p>e-mail: sidvadim-1993@mail.ru</p>
+                </li>
+                <li>
+                    <p>GitHub: vadim-sid1993</p>
+                </li>
+                <li>
+                    <p>Discord: vadim-sid(vadim-sid1993)#3226</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>2022</p>
+        <a href="https://github.com/vadim-sid1993">
+            <p>My GitHub</p>
+        </a>
+        <a href="https://rs.school/js/"><img src="./images/rs_school_js.svg" alt="rss"></a>
+    </footer>
 </body>
 
 </html>
