@@ -1,0 +1,118 @@
+body {
+    width: 1000px;
+    height: auto;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 20px;
+    background-color: black;
+    border-radius: 20px;
+}
+
+header img {
+    width: 300px;
+    border-radius: 150px;
+    margin: 10px;
+}
+
+h1 {
+    color: white;
+}
+
+.section h2 {
+    margin-left: 25px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+a:hover{
+    opacity: 0.5;
+    color: #F1CDB3;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 1000px;
+    height: auto;
+    margin: 20px;
+    background-color: rgb(56, 54, 54);
+    border-radius: 20px;
+    color: white;
+}
+
+.about_me p {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+.code pre {
+    font-size: 15px;
+}
+
+.skills ul li,
+.education ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skills ul li img,
+.education ul img {
+    width: 40px;
+    height: 40px;
+}
+
+.skills ul li p,
+.education ul p {
+    font-size: 20px;
+}
+.contacts ul li p {
+    font-size: 20px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+footer p {
+    font-size: 40px;
+}
+
+footer a img {
+    width: 120px;
+}
+
+footer a {
+    color: black;
+}
