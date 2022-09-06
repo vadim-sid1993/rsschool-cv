@@ -64,29 +64,6 @@
                 </li>
             </ul>
         </section>
-        <section id="code" class="section code">
-            <h2>Code</h2>
-            <pre>
-                document.onkeydown = function(event) {
-                    document.querySelector('.container .kb_key[data = "'+event.code+'"]').classList.add('active');
-                };
-                document.onkeyup = function(event) {
-                    document.querySelector('.container .kb_key[data = "'+event.code+'"]').classList.remove('active');
-                };
-                
-                document.querySelectorAll('.container .kb_key').forEach(function(element) {
-                    element.onclick = function (element){
-                        document.querySelectorAll('.container .kb_key').forEach(function(element) {
-                            element.classList.remove('active');
-                        });
-                        this.classList.add('active');
-                       setTimeout( () => {
-                           this.classList.remove('active')
-                       }, 100) 
-                    }
-                });
-            </pre>
-        </section>
         <section id="education" class="section education">
             <h2>Education</h2>
             <ul>
